@@ -62,7 +62,7 @@ export class WorldCovid19Stats extends Component {
         <div style={{ marginTop: 20 }}>
           <div>
             <table style={{ width: "100%" }}>
-              <tr style={{ fontSize: "20px" }}>
+              <tr style={{ fontSize: "15px" }}>
                 <th style={{ border: " solid black 2px" }}>Countries</th>
                 <th style={{ border: " solid black 2px" }}>Confirmed Cases</th>
                 <th style={{ border: " solid black 2px" }}>Critical Cases</th>
