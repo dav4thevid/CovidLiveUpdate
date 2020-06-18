@@ -6,11 +6,11 @@ export default function Homepage() {
   return (
       <div className = "container-fluid">
           <div className = "row">
-            <div className = "col-12 col-sm-12 col-md-4">
+            <div className = "col-12 col-sm-12 col-md-2">
               <QuickFacts></QuickFacts>
             </div>
 
-            <div className = "col-12 col-sm-12 col-md-8">
+            <div className = "col-12 col-sm-12 col-md-10">
               <WorldCovid19Stats></WorldCovid19Stats>
             </div>
           </div>
