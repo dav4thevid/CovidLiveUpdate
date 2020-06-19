@@ -75,10 +75,22 @@ export class WorldCovid19Stats extends Component {
                 <tr>
                   <td style={{ border: " solid black 2px" }}>{stat.name}</td>
                   <td style={{ border: " solid black 2px" }}>
+                    {stat.latest_data.confirmed}
+                  </td>
+                  <td style={{ border: " solid black 2px" }}>
+                    {stat.latest_data.critical}
+                  </td>
+                  <td style={{ border: " solid black 2px" }}>
+                    {stat.latest_data.recovered}
+                  </td>
+                  <td style={{ border: " solid black 2px" }}>
                     {stat.latest_data.deaths}
                   </td>
                   <td style={{ border: " solid black 2px" }}>
-                    {stat.latest_data.confirmed}
+                    {stat.today.confirmed}
+                  </td>
+                  <td style={{ border: " solid black 2px" }}>
+                    {stat.today.deaths}
                   </td>
                 </tr>
               ))}
@@ -91,7 +103,7 @@ export class WorldCovid19Stats extends Component {
                       data={ this.state.stats} 
                       
                       columns={ this.state.columns } >
-                    </BootstrapTable>   */}
+              </BootstrapTable>   */}
         </div>
       </div>
     );
