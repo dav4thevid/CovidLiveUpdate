@@ -54,11 +54,7 @@ export class WorldCovid19Stats extends Component {
   render() {
     return (
       <div className="container">
-        <div class="row" className="hdr">
-          <div class="col-sm-12 btn btn-info">
-            React Bootstrap Table with Searching and Custom Pagination
-          </div>
-        </div>
+       
         <div style={{ marginTop: 20 }}>
           <div>
             <table style={{ width: "100%" }}>
