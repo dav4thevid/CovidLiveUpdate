@@ -17,10 +17,12 @@ export class WorldCovid19Stats extends Component {
 
   render() {
     return (
+      // cellspacing="0" cellpadding="1" border="1" width="300"
             <div class="col-md-12 card" style ={{backgroundColor:"#445175"}} >
               <h3>World Statistics of Covid-19</h3>
               <div class="table-responsive">
-                <table id="mytable" class="table table-bordered table-responsive ">
+                <table style = {{width:"1000px", height:"400px", overflow:"auto;"}}
+                id="mytable" class="table table-bordered table-responsive ">
                   <thead>
                     {/* <th>
                       <input type="checkbox" id="checkall" />
