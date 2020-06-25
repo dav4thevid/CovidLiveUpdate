@@ -33,9 +33,9 @@ class QuickFact extends React.Component {
           
       <div style ={{backgroundColor:"#445175"}} class="card-body  ">
         <h2 class="card-text">Quick Facts</h2>
-        <small class = "card-text">
+        <h6 class = "card-text">Updated at: &nbsp;
           <Moment format="DD-MM-YYYY HH:mm">{this.state.timeline.updated_at}</Moment>
-        </small>
+        </h6>
 
         <h1 style = {{color:'#43ca54'}} class="header">{this.state.timeline.confirmed}</h1>
         <h4 class="card-text">Total Confirmed</h4>
