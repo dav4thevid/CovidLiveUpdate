@@ -19,10 +19,10 @@ export class WorldCovid19Stats extends Component {
     return (
       // cellspacing="0" cellpadding="1" border="1" width="300"
             <div class="col-md-12 card" style ={{backgroundColor:"#445175"}} >
-              <h3>World Statistics of Covid-19</h3>
+              <h3 style = {{color: "#DFDFEF"}}>World Statistics of Covid-19</h3>
               <div class="table-responsive">
                 <table style = {{width:"1000px", height:"400px", overflow:"auto;"}}
-                id="mytable" class="table table-bordered table-responsive ">
+                id="mytable" class="table table-striped  table-responsive ">
                   <thead>
                     {/* <th>
                       <input type="checkbox" id="checkall" />
@@ -38,23 +38,23 @@ export class WorldCovid19Stats extends Component {
                   <tbody>
                   {this.state.stats.map((stat) => (
                 <tr>
-                  <td >{stat.name}</td>
-                  <td >
+                  <td style = {{color: "#DFDFEF"}}>{stat.name}</td>
+                  <td style = {{color:'#43ca54'}} >
                     {stat.latest_data.confirmed}
                   </td>
-                  <td >
+                  <td style = {{color:'#FF9D00'}}>
                     {stat.latest_data.critical}
                   </td>
-                  <td >
+                  <td style = {{color: "#5468b3"}}>
                     {stat.latest_data.recovered}
                   </td>
-                  <td >
+                  <td style = {{color: "#F65164"}}>
                     {stat.latest_data.deaths}
                   </td>
-                  <td>
+                  <td style = {{color: "#43ca54"}}>
                     {stat.today.confirmed}
                   </td>
-                  <td>
+                  <td style = {{color: "#F65164"}}>
                     {stat.today.deaths}
                   </td>
                 </tr>
@@ -64,33 +64,7 @@ export class WorldCovid19Stats extends Component {
                 </table>
 
                 <div class="clearfix"></div>
-                <ul class="pagination pull-right">
-                  <li class="disabled">
-                    <a href="#">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                  </li>
-                  <li class="active">
-                    <a href="#">1</a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">4</a>
-                  </li>
-                  <li>
-                    <a href="#">5</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </li>
-                </ul>
+              
               </div>
             </div>
          

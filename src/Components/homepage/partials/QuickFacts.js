@@ -29,7 +29,7 @@ class QuickFact extends React.Component {
     return (<div>
       <div class = "row ">
         <div class = "col">
-        <div  class="card ">
+        <div  class="card border-0 ">
           
       <div style ={{backgroundColor:"#445175"}} class="card-body  ">
         <h2 class="card-text">Quick Facts</h2>
