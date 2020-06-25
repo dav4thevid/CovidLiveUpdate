@@ -22,14 +22,14 @@ export class WorldCovid19Stats extends Component {
               <h3 style = {{color: "#DFDFEF"}}>World Statistics of Covid-19</h3>
               <div class="table-responsive">
                 <table style = {{width:"1000px", height:"400px", overflow:"auto;"}}
-                id="mytable" class="table table-striped  table-responsive ">
+                id="mytable" class="border-0 table table-striped  table-responsive ">
                   <thead>
                     {/* <th>
                       <input type="checkbox" id="checkall" />
                     </th> */}
-                    <th >Countries</th>
-                <th >Confirmed Cases</th>
-                <th >Critical Cases</th>
+                    <th>Countries</th>
+                <th >Confirmed</th>
+                <th >Active</th>
                 <th >Recovered</th>
                 <th >Death</th>
                 <th >Newly Confirmed</th>

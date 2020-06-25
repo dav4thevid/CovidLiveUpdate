@@ -9,7 +9,9 @@
 }
 
 th{
-    color:#DFDFEF
+    color:#DFDFEF;
+    border-top: hidden;
+    border-bottom: hidden;
 }
 
 
@@ -22,7 +24,7 @@ tr{
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color:  #364061;
-   
+   border-top: hidden;
  }
 
 
