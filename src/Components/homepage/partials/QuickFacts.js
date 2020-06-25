@@ -27,8 +27,8 @@ class QuickFact extends React.Component {
     return (<div>
       <div class = "row ">
         <div class = "col">
-        <div class="card ">
-      <div class="card-body  ">
+        <div  class="card ">
+      <div style ={{backgroundColor:"#445175"}} class="card-body  ">
         <h2 class="card-title">QUICK FACTS</h2>
         <small>{this.state.timeline.updated_at}</small>
         <h3 class="card-header">{this.state.timeline.confirmed}</h3>
