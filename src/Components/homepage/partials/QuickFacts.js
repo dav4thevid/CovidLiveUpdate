@@ -1,7 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import format from 'date-fns/format'
+import { parseISO } from 'date-fns';
+import Moment from 'react-moment';
 
-const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+// const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 
 class QuickFact extends React.Component {
   constructor(props){
@@ -23,28 +26,35 @@ class QuickFact extends React.Component {
     })
   }
 
+
   render() {
     return (<div>
       <div class = "row ">
         <div class = "col">
         <div  class="card ">
+          
       <div style ={{backgroundColor:"#445175"}} class="card-body  ">
-        <h2 class="card-title">QUICK FACTS</h2>
-        <small>{this.state.timeline.updated_at}</small>
-        <h3 class="card-header">{this.state.timeline.confirmed}</h3>
-        <h5 class="card-text">Total-Confirmed</h5>
-        <h3 class="card-header">{this.state.timeline.active}</h3>
-        <h5 class="card-text">Total-Active</h5>
-        <h3 class = "card-header">{this.state.timeline.recovered}</h3>
-        <h5 clas = "card-text">Total Recovered</h5>
-        <h3 class = "card-header">{this.state.timeline.deaths}</h3>
-        <h5 clas = "card-text">Total Deaths</h5>
-        <h3 class = "card-header">{this.state.timeline.new_confirmed}</h3>
-        <h5 clas = "card-text">Newly Confirmed</h5>
-        <h3 class = "card-header">{this.state.timeline.new_recovered}</h3>
-        <h5 clas = "card-text">Newly Recovered</h5>
-        <h3 class = "card-header">{this.state.timeline.new_deaths}</h3>
-        <h5 clas = "card-text">New Deaths</h5> 
+        <h2 class="card-text">Quick Facts</h2>
+        <small class = "card-text">
+          <Moment format="DD-MM-YYYY HH:mm">{this.state.timeline.updated_at}</Moment>
+        </small>
+
+        <h1 style = {{color:'#43ca54'}} class="header">{this.state.timeline.confirmed}</h1>
+        <h4 class="card-text">Total Confirmed</h4>
+        <h1 style = {{color:'#FF9D00'}} class="header">{this.state.timeline.active}</h1>
+        <h4 class="card-text">Total Active</h4>
+        <h1 style = {{color: "#5468b3"}}class = "header">{this.state.timeline.recovered}</h1>
+        <h4 class = "card-text">Total Recovered</h4>
+        <h1 style = {{color: "#F65164"}} class = "header">{this.state.timeline.deaths}</h1>
+        <h4 class = "card-text">Total Deaths</h4>
+        <h1 style = {{color:'#43ca54'}} class = "header">{this.state.timeline.new_confirmed}</h1>
+        <h4 class = "card-text">Newly Confirmed</h4>
+        <h1 style = {{color: "#5468b3"}} class = "header">{this.state.timeline.new_recovered}</h1>
+        <h4 class = "card-text">Newly Recovered</h4>
+        <h1 style = {{color: "#F65164"}} class = "header">{this.state.timeline.new_deaths}</h1>
+        <h4 class = "card-text">New Deaths</h4> 
+
+                      
       </div>
     </div>
         </div>
