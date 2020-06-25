@@ -17,11 +17,8 @@ export class WorldCovid19Stats extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div class="container">
-          <div class="row">
             <div class="col-md-12">
-              <h4>Bootstrap Snipp for Datatable</h4>
+              <h3>World Statistics of Covid-19</h3>
               <div class="table-responsive">
                 <table id="mytable" class="table table-bordered table-responsive  table-striped">
                   <thead>
@@ -33,8 +30,8 @@ export class WorldCovid19Stats extends Component {
                 <th >Critical Cases</th>
                 <th >Recovered</th>
                 <th >Death</th>
-                <th >Newly Confirmed (Today)</th>
-                <th >New Death (Today)</th>
+                <th >Newly Confirmed</th>
+                <th >New Deaths</th>
                   </thead>
                   <tbody>
                   {this.state.stats.map((stat) => (
@@ -94,11 +91,8 @@ export class WorldCovid19Stats extends Component {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+         
 
-       
-      </div>
     );
   }
 }
