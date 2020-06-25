@@ -1,7 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import format from 'date-fns/format'
-import { parseISO } from 'date-fns';
 import Moment from 'react-moment';
 
 // const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
