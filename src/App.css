@@ -27,6 +27,17 @@ tr{
    border-top: hidden;
  }
 
+ table::-webkit-scrollbar{
+   
+    background-color:  #364061;;
+}
+table::-webkit-scrollbar-thumb{
+    background-color:red;
+}
+table::-webkit-scrollbar-thumb:window-inactive{
+   background-color:brown
+}
+
 
 
 

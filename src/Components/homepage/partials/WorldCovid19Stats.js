@@ -6,7 +6,7 @@ import BounceLoader from "react-spinners/BounceLoader";
 const override = css`
   display: block;
   margin: 0 auto;
-  border-color: blue;
+  border-color: red;
 `;
 
 export class WorldCovid19Stats extends Component {
@@ -33,7 +33,7 @@ export class WorldCovid19Stats extends Component {
       return <div className="sweet-loading">
         <BounceLoader
           css={override}
-          size={150}
+          size={180}
           color={"#123abc"}
           loading={this.state.loading}
         />
