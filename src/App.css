@@ -32,7 +32,7 @@ tr{
     background-color:  #364061;;
 }
 table::-webkit-scrollbar-thumb{
-    background-color:red;
+    background-color:#5468b3;
 }
 table::-webkit-scrollbar-thumb:window-inactive{
    background-color:brown
