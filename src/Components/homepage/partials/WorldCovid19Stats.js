@@ -1,25 +1,50 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { css } from "@emotion/core";
+import BounceLoader from "react-spinners/BounceLoader";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: blue;
+`;
 
 export class WorldCovid19Stats extends Component {
   state = {
     stats: [],
+    loading: true,
 
   };
   // Territory	Total Cases	New Cases	Total Deaths	New Deaths	Total Recovered
   componentDidMount() {
     const url = "https://corona-api.com/countries";
     axios.get(url).then((response) => {
-      this.setState({ stats: response.data.data });
+      this.setState({ stats: response.data.data, loading: false });
       console.log(this.state.stats);
-    });
+    }).catch(error => {
+      if (error.response) {
+        console.log(error.response)
+      }
+    })
   }
 
   render() {
+    if (this.state.loading ) {
+      return <div className="sweet-loading">
+        <BounceLoader
+          css={override}
+          size={150}
+          color={"#123abc"}
+          loading={this.state.loading}
+        />
+      </div>
+    }
     return (
       // cellspacing="0" cellpadding="1" border="1" width="300"
             <div class="col-md-12 card" style ={{backgroundColor:"#445175"}} >
-              <h3 style = {{color: "#DFDFEF"}}>World Statistics of Covid-19</h3>
+              <h3 style = {{color: "#DFDFEF"}}>
+                World Statistics of Covid-19
+              </h3>
               <div class="table-responsive">
                 <table style = {{width:"1000px", height:"400px", overflow:"auto;"}}
                 id="mytable" class="border-0 table table-striped  table-responsive ">
