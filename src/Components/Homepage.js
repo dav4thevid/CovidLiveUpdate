@@ -1,6 +1,6 @@
 import React from 'react';
-import QuickFacts from '../homepage/partials/QuickFacts';
-import WorldCovid19Stats from '../homepage/partials/WorldCovid19Stats'
+import QuickFacts from './homepage/partials/QuickFacts';
+import WorldCovid19Stats from './homepage/partials/WorldCovid19Stats'
 
 export default function Homepage() {
   return (

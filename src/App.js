@@ -1,14 +1,21 @@
 import React from 'react';
 import Navbar from '../src/Components/Navbar';
-import Homepage from '../src/Components/homepage/Homepage'
-// import logo from './logo.svg';
+import Homepage from './Components/Homepage'
+import About from '../src/Components/About'
+import Errors from '../src/Components/Error'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 export default function App() {
   return (
     <div>
         <Navbar></Navbar>
-        <Homepage></Homepage>
+      <Switch>
+        {/* <Homepage></Homepage> */}
+        <Route exact path = "/" component = {Homepage}/>
+        <Route path="/about" component={About} />
+        <Route component={Errors} />
+      </Switch>
     </div>
   );
 }
