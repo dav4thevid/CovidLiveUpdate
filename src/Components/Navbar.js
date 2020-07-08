@@ -4,7 +4,7 @@ import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
 function Navigation() {
     return (
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark mb-4">
   <a className = "navbar-brand" href="#">Navbar</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -17,16 +17,19 @@ function Navigation() {
       <li className="nav-item">
         <Link to ="/about" className="nav-link">About<span className="sr-only">(current)</span></Link>
       </li>
-      <li className="nav-item dropdown">
+      <li className="nav-item">
+        <Link to ="/more" className="nav-link">More<span className="sr-only"></span></Link>
+      </li>
+      {/* <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           More
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <Link to = "/safety" className="dropdown-item" >Safety Measures</Link>
-          <Link to = "/safety" className="dropdown-item" >Safety Measures</Link>
-          <Link to = "/safety" className="dropdown-item" >Who created This?</Link>
+          <Link to = "/overview" className="dropdown-item" >Overview</Link>
+          <Link to = "/prevention" className="dropdown-item" >Prevention</Link>
+          <Link to = "/symtoms" className="dropdown-item" >Symptoms</Link>
         </div>
-      </li>
+      </li> */}
     </ul>
   </div>
 </nav>
