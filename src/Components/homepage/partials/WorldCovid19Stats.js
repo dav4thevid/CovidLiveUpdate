@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { css } from "@emotion/core";
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
+import MoonLoader from "react-spinners/MoonLoader"
 
 const override = css`
   display: block;
-  margin: 0 auto;
+  margin: 10% auto;
   border-color: red;
 `;
 
@@ -31,10 +32,10 @@ export class WorldCovid19Stats extends Component {
   render() {
     if (this.state.loading ) {
       return <div className="sweet-loading">
-        <BounceLoader
+        <MoonLoader
           css={override}
-          size={180}
-          color={"#123abc"}
+          size={120}
+          color={"orange"}
           loading={this.state.loading}
         />
       </div>
