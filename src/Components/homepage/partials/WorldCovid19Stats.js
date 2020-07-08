@@ -7,7 +7,6 @@ import MoonLoader from "react-spinners/MoonLoader"
 const override = css`
   display: block;
   margin: 10% auto;
-  border-color: red;
 `;
 
 export class WorldCovid19Stats extends Component {
@@ -35,7 +34,7 @@ export class WorldCovid19Stats extends Component {
         <MoonLoader
           css={override}
           size={120}
-          color={"orange"}
+          color={"#FF9D00"}
           loading={this.state.loading}
         />
       </div>
@@ -47,7 +46,8 @@ export class WorldCovid19Stats extends Component {
                 World Statistics of Covid-19
               </h3>
               <div class="table-responsive">
-                <table style = {{width:"1000px", height:"400px", overflow:"auto;"}}
+                {/* <table style = {{width:"1000px", height:"400px", overflow:"auto;"}} */}
+               <table
                 id="mytable" class="border-0 table table-striped  table-responsive ">
                   <thead>
                     {/* <th>
